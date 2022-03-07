@@ -138,7 +138,7 @@ function selectOption(option) {
 const textNodes = [
     {
         id: 1,
-        text: "Here I'm going to tell you an awesome story! But first, take something for free to test things.",
+        text: "Here I'm going to tell you an awesome story some day! But first, take something for free.",
         options: [
             {
                 text: 'Take a free sword!',
@@ -159,7 +159,7 @@ const textNodes = [
     },
     {
         id: 2,
-        text: "Those were some nice things you've got before. You see a caravan ahead, time to make some choices.",
+        text: "Those were some nice options you had. But now it's time to make some real ones, you see a caravan ahead.",
         options: [
             {
                 text: 'Train with your brand new sword',
@@ -168,7 +168,7 @@ const textNodes = [
                 setCoins: -5,
             },
             {
-                text: 'Trade your sword for an old shield at the Merchant on the tent',
+                text: 'Trade your sword for an old shield with the Merchant at the tent',
                 requiredState: (currentState) => currentState.sword,
                 setState: { sword: false, shield: true },
                 nextText: 4,
